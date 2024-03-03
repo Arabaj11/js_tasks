@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // constructor
+
+        function Student( first,last,age,address)
+        {
+            this.firstname = first;
+            this.lastname = last;
+            this.age = age;
+            this.address = address
+        }
+
+        // multiple data add karane
+
+        let x = new Student("Arabaj","Mulla",22,"Kolhapur");
+        console.log(x);
+
+        
+        let y = new Student("Tushar","More",22,"Satara");
+        console.log(y);
+
+        // add kelelya datamadhye extra value add karu shakato.
+
+        // for-example
+
+        y.Nickname= "Bandya";
+        console.log(y);
+
+        // jar 2 property ekdam access karayachya astil tar.
+
+        y.fullname= function()
+        {
+            return this.firstname + " " + this.lastname;
+        }
+        console.log(y.fullname());
+    </script>
+</body>
+</html>

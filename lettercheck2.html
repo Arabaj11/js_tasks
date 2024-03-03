@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    
+        // let i = 0;
+        let x = "a";
+       
+
+        let friends = ["arabaj", "tushar", "raj", "sushant"];
+        // console.log(friends[1]);
+
+        let output = [];
+
+        for (let i = 0; i < friends.length; i++) {
+            // console.log(friends[i]);
+            // console.log(friends[i].length);
+
+            let count = 0;
+
+            for (let j = 0; j < friends[i].length; j++) {
+                // console.log(friends[0]);
+
+                if (friends[i][j] === x) {
+
+                    count++;
+
+                }
+
+                if (count === 2) {
+                    // let z = output.push(friends[i]);
+                    output.push(friends[i]);
+                    break;
+                }
+
+
+
+            }
+
+        }
+
+
+        console.log(output);
+
+    </script>
+
+</body>
+</html>
